@@ -1,0 +1,1 @@
+func (cdr lsta) (cdr lstb)	(+ r (mult (car lsta) lstb))

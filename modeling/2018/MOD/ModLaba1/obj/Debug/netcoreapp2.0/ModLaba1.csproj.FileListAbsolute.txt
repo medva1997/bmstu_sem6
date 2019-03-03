@@ -1,0 +1,10 @@
+/home/local/NAS/almedvedev/RiderProjects/MOD/ModLaba1/bin/Debug/netcoreapp2.0/ModLaba1.deps.json
+/home/local/NAS/almedvedev/RiderProjects/MOD/ModLaba1/bin/Debug/netcoreapp2.0/ModLaba1.runtimeconfig.json
+/home/local/NAS/almedvedev/RiderProjects/MOD/ModLaba1/bin/Debug/netcoreapp2.0/ModLaba1.runtimeconfig.dev.json
+/home/local/NAS/almedvedev/RiderProjects/MOD/ModLaba1/bin/Debug/netcoreapp2.0/ModLaba1.dll
+/home/local/NAS/almedvedev/RiderProjects/MOD/ModLaba1/bin/Debug/netcoreapp2.0/ModLaba1.pdb
+/home/local/NAS/almedvedev/RiderProjects/MOD/ModLaba1/obj/Debug/netcoreapp2.0/ModLaba1.csproj.CoreCompileInputs.cache
+/home/local/NAS/almedvedev/RiderProjects/MOD/ModLaba1/obj/Debug/netcoreapp2.0/ModLaba1.AssemblyInfoInputs.cache
+/home/local/NAS/almedvedev/RiderProjects/MOD/ModLaba1/obj/Debug/netcoreapp2.0/ModLaba1.AssemblyInfo.cs
+/home/local/NAS/almedvedev/RiderProjects/MOD/ModLaba1/obj/Debug/netcoreapp2.0/ModLaba1.dll
+/home/local/NAS/almedvedev/RiderProjects/MOD/ModLaba1/obj/Debug/netcoreapp2.0/ModLaba1.pdb

@@ -1,0 +1,4 @@
+0x00000000	ret_random_num	/home/local/NAS/almedvedev/Documents/OS/lab_modules/2/mod1	EXPORT_SYMBOL
+0x00000000	ret_is_num_poz_neg	/home/local/NAS/almedvedev/Documents/OS/lab_modules/2/mod1	EXPORT_SYMBOL
+0x00000000	export_str	/home/local/NAS/almedvedev/Documents/OS/lab_modules/2/mod1	EXPORT_SYMBOL
+0x00000000	export_int	/home/local/NAS/almedvedev/Documents/OS/lab_modules/2/mod1	EXPORT_SYMBOL

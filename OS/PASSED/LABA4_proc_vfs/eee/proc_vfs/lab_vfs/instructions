@@ -1,0 +1,13 @@
+make
+sudo insmod ./vfs.ko
+lsmod | grep vfs
+dmesg -> my_vfs module loaded!
+* touch image
+* mkdir dir
+sudo mount -o loop -t my_vfs ./image ./dir
+dmesg -> my_vfs mounted!
+sudo umount ./dir	
+dmesg -> my_vfs superblock destroyed!
+sudo rmmod vfs
+dmesg -> my_vfs module unloaded!
+

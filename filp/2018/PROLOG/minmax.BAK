@@ -1,0 +1,51 @@
+include "laba1.inc"
+
+predicates
+	min(integer,integer,integer,integer).
+	min(integer,integer,integer).
+	
+	max(integer,integer,integer,integer).
+	max(integer,integer,integer).
+	
+	factorial(integer, real).
+	fibonachi(integer, real).
+clauses	
+	min(Var1,Var2,Var3,RES) :-
+		min(Var1,Var2,A),min(A,Var3,RES).	
+	min(Var1,Var2,Var1) :-
+   		Var1 < Var2,!.
+   	min(_,Var2, Var2).
+   	
+   	%%%%%%%%%%%%%%%%%%%%%%%%%
+   	max(Var1,Var2,Var3,RES) :-
+		max(Var1,Var2,A),max(A,Var3,RES).
+		
+	max(Var1,Var2,Var1) :-
+   		Var1 > Var2,!.
+   	max(_,Var2, Var2).
+   	%%%%%%%%%%%%%%%%%%%%%%%%%
+   	
+   	factorial(1,1):-!.
+   	factorial(N,R):- N1=N-1, factorial(N1,R1) ,R=R1*N.
+   	
+   	%%%%%%%%%%%%%%%%%%%%%%%%%
+   	
+   	fibonachi(1, 1):-!.
+   	fibonachi(2, 1):-!.
+   	fibonachi(N, Res):-
+   		N1=N-1,
+   		N2=N-2,
+   		fibonachi(N1, R1),
+   		fibonachi(N2, R2),
+   		Res=R1+R2.
+   		
+Goal
+	%min(1,2,3,Res).
+	%min(2,1,3,Res).
+	%min(3,2,1,Res).
+	%min(5,3,Res).
+	%min(3,5,Res).
+	%max(2,3,1,Res).
+	%factorial(5,Res).
+	%factorial(1,Res).
+	fibonachi(5, RES).

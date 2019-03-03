@@ -1,0 +1,1 @@
+cmd_/home/nikita/Projects/labs/Operation-Systems/last/wq/wq.ko := ld -r -m elf_x86_64 -z max-page-size=0x200000 -T ./scripts/module-common.lds --build-id  -o /home/nikita/Projects/labs/Operation-Systems/last/wq/wq.ko /home/nikita/Projects/labs/Operation-Systems/last/wq/wq.o /home/nikita/Projects/labs/Operation-Systems/last/wq/wq.mod.o ;  true

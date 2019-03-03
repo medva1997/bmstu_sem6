@@ -1,0 +1,3 @@
+/home/local/NAS/almedvedev/Documents/OS/LABA4_proc_vfs/eee/proc_vfs/lab_proc/os_proc.ko
+/home/local/NAS/almedvedev/Documents/OS/LABA4_proc_vfs/eee/proc_vfs/lab_proc/os_proc.o
+

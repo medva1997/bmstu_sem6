@@ -1,0 +1,1 @@
+cmd_/home/osboxes/Desktop/OS/Modules/Modules2/module3.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/osboxes/Desktop/OS/Modules/Modules2/module3.ko /home/osboxes/Desktop/OS/Modules/Modules2/module3.o /home/osboxes/Desktop/OS/Modules/Modules2/module3.mod.o ;  true

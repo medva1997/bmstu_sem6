@@ -1,0 +1,1 @@
+cmd_/home/local/NAS/almedvedev/Documents/OS/lab8/w2/work.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/local/NAS/almedvedev/Documents/OS/lab8/w2/work.ko /home/local/NAS/almedvedev/Documents/OS/lab8/w2/work.o /home/local/NAS/almedvedev/Documents/OS/lab8/w2/work.mod.o ;  true

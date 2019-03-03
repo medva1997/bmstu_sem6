@@ -1,0 +1,1 @@
+cmd_/home/irina/Документы/BMSTU_6/systemprogramming_6/lab_workqueues/wq.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/irina/Документы/BMSTU_6/systemprogramming_6/lab_workqueues/wq.ko /home/irina/Документы/BMSTU_6/systemprogramming_6/lab_workqueues/wq.o /home/irina/Документы/BMSTU_6/systemprogramming_6/lab_workqueues/wq.mod.o ;  true
