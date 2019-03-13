@@ -1,0 +1,2 @@
+http://clhs.lisp.se/Body/c_conses.htm
+http://www.lispworks.com/documentation/HyperSpec/Body/s_let_l.htm
