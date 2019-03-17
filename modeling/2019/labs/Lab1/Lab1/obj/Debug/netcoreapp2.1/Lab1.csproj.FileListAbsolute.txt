@@ -1,0 +1,11 @@
+C:\Users\medva.LAPTOP-U0TLEODB\Desktop\bmstu_sem6\modeling\2019\labs\Lab1\Lab1\bin\Debug\netcoreapp2.1\Lab1.deps.json
+C:\Users\medva.LAPTOP-U0TLEODB\Desktop\bmstu_sem6\modeling\2019\labs\Lab1\Lab1\bin\Debug\netcoreapp2.1\Lab1.runtimeconfig.json
+C:\Users\medva.LAPTOP-U0TLEODB\Desktop\bmstu_sem6\modeling\2019\labs\Lab1\Lab1\bin\Debug\netcoreapp2.1\Lab1.runtimeconfig.dev.json
+C:\Users\medva.LAPTOP-U0TLEODB\Desktop\bmstu_sem6\modeling\2019\labs\Lab1\Lab1\bin\Debug\netcoreapp2.1\Lab1.dll
+C:\Users\medva.LAPTOP-U0TLEODB\Desktop\bmstu_sem6\modeling\2019\labs\Lab1\Lab1\bin\Debug\netcoreapp2.1\Lab1.pdb
+C:\Users\medva.LAPTOP-U0TLEODB\Desktop\bmstu_sem6\modeling\2019\labs\Lab1\Lab1\obj\Debug\netcoreapp2.1\Lab1.csprojAssemblyReference.cache
+C:\Users\medva.LAPTOP-U0TLEODB\Desktop\bmstu_sem6\modeling\2019\labs\Lab1\Lab1\obj\Debug\netcoreapp2.1\Lab1.csproj.CoreCompileInputs.cache
+C:\Users\medva.LAPTOP-U0TLEODB\Desktop\bmstu_sem6\modeling\2019\labs\Lab1\Lab1\obj\Debug\netcoreapp2.1\Lab1.AssemblyInfoInputs.cache
+C:\Users\medva.LAPTOP-U0TLEODB\Desktop\bmstu_sem6\modeling\2019\labs\Lab1\Lab1\obj\Debug\netcoreapp2.1\Lab1.AssemblyInfo.cs
+C:\Users\medva.LAPTOP-U0TLEODB\Desktop\bmstu_sem6\modeling\2019\labs\Lab1\Lab1\obj\Debug\netcoreapp2.1\Lab1.dll
+C:\Users\medva.LAPTOP-U0TLEODB\Desktop\bmstu_sem6\modeling\2019\labs\Lab1\Lab1\obj\Debug\netcoreapp2.1\Lab1.pdb
