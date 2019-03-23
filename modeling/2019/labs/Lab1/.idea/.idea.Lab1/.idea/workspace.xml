@@ -2,46 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86bae554-977e-4801-ab48-a6cdd63faadf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Lab1/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Lab1/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Lab1/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Lab1/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1.sln" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1.sln.DotSettings.user" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1/Lab1.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1/bin/Debug/netcoreapp2.1/Lab1.deps.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1/bin/Debug/netcoreapp2.1/Lab1.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1/bin/Debug/netcoreapp2.1/Lab1.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1/bin/Debug/netcoreapp2.1/Lab1.runtimeconfig.dev.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1/bin/Debug/netcoreapp2.1/Lab1.runtimeconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1/obj/Debug/netcoreapp2.1/Lab1.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1/obj/Debug/netcoreapp2.1/Lab1.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1/obj/Debug/netcoreapp2.1/Lab1.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1/obj/Debug/netcoreapp2.1/Lab1.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1/obj/Debug/netcoreapp2.1/Lab1.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1/obj/Debug/netcoreapp2.1/Lab1.csprojAssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1/obj/Debug/netcoreapp2.1/Lab1.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1/obj/Debug/netcoreapp2.1/Lab1.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1/obj/Lab1.csproj.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1/obj/Lab1.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1/obj/Lab1.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2018/lect/20180607_095514.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2018/lect/20180607_095514.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2018/lect/20180607_095517.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2018/lect/20180607_095517.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2018/lect/20180607_095526.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2018/lect/20180607_095526.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2018/lect/20180607_095528.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2018/lect/20180607_095528.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2018/lect/20180607_095551.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2018/lect/20180607_095551.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2018/lect/20180607_095553.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2018/lect/20180607_095553.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2018/lect/20180607_095601.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2018/lect/20180607_095601.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2018/lect/20180607_095604.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2018/lect/20180607_095604.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2018/lect/20180607_095612.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2018/lect/20180607_095612.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2018/lect/20180607_095614.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2018/lect/20180607_095614.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2018/lect/20180607_095621.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2018/lect/20180607_095621.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2018/lect/20180607_095624.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2018/lect/20180607_095624.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2018/lect/20180607_095632.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2018/lect/20180607_095632.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2018/lect/20180607_095636.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2018/lect/20180607_095636.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../prictik_1sem/PDF/bmstu_test/file1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../prictik_1sem/PDF/bmstu_test/file2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../prictik_1sem/PDF/bmstu_test/file3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../prictik_1sem/PDF/bmstu_test/file4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../prictik_1sem/PDF/bmstu_test/folder1/file1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../prictik_1sem/PDF/bmstu_test/folder1/file2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../prictik_1sem/PDF/bmstu_test/folder1/file3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../prictik_1sem/PDF/bmstu_test/folder1/file4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../prictik_1sem/PDF/bmstu_test/folder2/file1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../prictik_1sem/PDF/bmstu_test/folder2/file2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../prictik_1sem/PDF/bmstu_test/folder2/file3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../prictik_1sem/PDF/bmstu_test/folder2/file4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../prictik_1sem/PDF/bmstu_test/folder3/file1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../prictik_1sem/PDF/bmstu_test/folder3/file2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../prictik_1sem/PDF/bmstu_test/folder3/file3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../prictik_1sem/PDF/bmstu_test/folder3/file4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../prictik_1sem/PDF/bmstu_test/folder4/file1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../prictik_1sem/PDF/bmstu_test/folder4/file2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../prictik_1sem/PDF/bmstu_test/folder4/file3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../prictik_1sem/PDF/bmstu_test/folder4/file4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../prictik_1sem/PDF/bmstu_test/folder4/test3.txt.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../prictik_1sem/PDF/bmstu_test/folder5/file1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../prictik_1sem/PDF/bmstu_test/folder5/file2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../prictik_1sem/PDF/bmstu_test/folder5/file3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../prictik_1sem/PDF/bmstu_test/folder5/file4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../prictik_1sem/PDF/checker.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../matstat/2019/labs/lab1/laba1.m" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../matstat/2019/labs/lab1/laba1.m" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +41,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Lab1/Program.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1132">
+            <state relative-caret-position="328">
               <caret line="276" column="13" selection-start-line="276" selection-start-column="13" selection-end-line="276" selection-end-column="13" />
               <folding>
                 <marker date="1552727531138" expanded="true" signature="30:9998" ph="{...}" />
@@ -124,7 +111,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AssemblyExplorer" />
       <pane id="SolutionExplorer">
         <subPane>
           <expand>
@@ -138,6 +124,7 @@
         <option name="show-all-files" value="false" />
       </pane>
       <pane id="FileSystemExplorer" />
+      <pane id="AssemblyExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -194,11 +181,12 @@
       <updated>1552681586490</updated>
       <workItem from="1552681589356" duration="3336000" />
       <workItem from="1552712512597" duration="8108000" />
+      <workItem from="1552945596523" duration="43000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11444000" />
+    <option name="totallyTimeSpent" value="11487000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -210,10 +198,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18154311" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18336888" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -261,7 +249,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Lab1/Program.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1132">
+        <state relative-caret-position="328">
           <caret line="276" column="13" selection-start-line="276" selection-start-column="13" selection-end-line="276" selection-end-column="13" />
           <folding>
             <marker date="1552727531138" expanded="true" signature="30:9998" ph="{...}" />
