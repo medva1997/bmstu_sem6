@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1000.0" stylesheets="/sample/sample.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SampleController">
+    <children>
+        <Pane prefHeight="800.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label layoutX="350.0" layoutY="20.0" prefHeight="36.0" prefWidth="394.0" text="Лабораторная работа 5">
+                    <font>
+                        <Font size="30.0" />
+                    </font>
+                </Label>
+
+                <GridPane layoutX="50.0" layoutY="80.0" prefHeight="210.0" prefWidth="520.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="240.0" minWidth="10.0" prefWidth="280.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <Label prefHeight="50.0" prefWidth="262.0" text="Длина стержня (barL):" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="TOP">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </Label>
+                        <Label prefHeight="50.0" prefWidth="262.0" text="Радиус стержня (barR):" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </Label>
+                        <Label prefHeight="50.0" prefWidth="262.0" text="Плотность потока (F0):" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </Label>
+                        <Label prefHeight="50.0" prefWidth="262.0" text="Температура о.с. (Tenv):" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="TOP">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </Label>
+                        <Label prefHeight="30.0" prefWidth="263.0" text="Количество итераций (n):" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="TOP">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <Label prefHeight="30.0" prefWidth="263.0" text="Коэф-т теплоотдачи (alpha0):" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="TOP">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <Label prefHeight="30.0" prefWidth="263.0" text="Коэф-т теплоотдачи (alphaN):" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="TOP">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="barL" text="10.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                        <TextField fx:id="barR" text="0.5" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <TextField fx:id="F0" text="100" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <TextField fx:id="Tos" text="300" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <TextField fx:id="step" text="100" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <TextField fx:id="a0" text="1e-2" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <TextField fx:id="aN" text="0.9e-2" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                    </children>
+                </GridPane>
+
+                <GridPane gridLinesVisible="true" layoutX="500.0" layoutY="79.0" prefHeight="251.0" prefWidth="382.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="133.0" minWidth="10.0" prefWidth="133.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="134.0" minWidth="10.0" prefWidth="134.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="133.0" minWidth="10.0" prefWidth="133.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                    <Label prefHeight="50.0" prefWidth="133.0" text="T,K" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="TOP">
+                        <font>
+                            <Font size="15.0" />
+                        </font>
+                    </Label>
+                    <Label prefHeight="50.0" prefWidth="134.0" text="С, Дж/(см^3*K)" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="TOP">
+                        <font>
+                            <Font size="15.0" />
+                        </font>
+                    </Label>
+                    <Label prefHeight="50.0" prefWidth="133.0" text="k, Вт/(см*К)" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="TOP">
+                        <font>
+                            <Font size="15.0" />
+                        </font>
+                    </Label>
+                        <Label text="300" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                        <Label text="3.5415" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label text="0.799" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <Label text="400" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                        <Label text="3.865" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label text="0.694" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                        <Label text="500" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                        <Label text="4.1766" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Label text="0.618" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                        <Label text="600" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+                        <Label text="4.5103" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <Label text="0.551" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                        <Label text="700" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+                        <Label text="4.8786" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <Label text="0.487" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                        <Label text="800" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+                        <Label text="5.3445" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                        <Label text="0.427" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                        <Label text="900" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+                        <Label text="6.0819" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                        <Label text="0.372" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                        <Label text="1000" GridPane.columnIndex="0" GridPane.rowIndex="8" />
+                        <Label text="7.674" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                        <Label text="0.32" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+                        <Label text="1100" GridPane.columnIndex="0" GridPane.rowIndex="9" />
+                        <Label text="6.2496" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                        <Label text="0.302" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+                        <Label text="1200" GridPane.columnIndex="0" GridPane.rowIndex="10" />
+                        <Label text="4.7779" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                        <Label text="0.29" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+                        <Label text="1400" GridPane.columnIndex="0" GridPane.rowIndex="11" />
+                        <Label text="5.0376" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                        <Label text="0.315" GridPane.columnIndex="2" GridPane.rowIndex="11" />
+                        <Label text="1600" GridPane.columnIndex="0" GridPane.rowIndex="12" />
+                        <Label text="5.3028" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+                        <Label text="0.34" GridPane.columnIndex="2" GridPane.rowIndex="12" />
+                        <Label text="1800" GridPane.columnIndex="0" GridPane.rowIndex="13" />
+                        <Label text="6.2921" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+                        <Label text="0.35" GridPane.columnIndex="2" GridPane.rowIndex="13" />
+                    </children>
+                </GridPane>
+                <Button layoutX="50.0" layoutY="300" onAction="#getGraph" prefHeight="20" prefWidth="299.0" text="Построить график">
+                    <font>
+                        <Font size="16.0" />
+                    </font></Button>
+                <LineChart fx:id="linechart" createSymbols="false" layoutX="20.0" layoutY="350.0" prefHeight="450.0" prefWidth="960.0">
+                    <xAxis>
+                        <NumberAxis autoRanging="false" label="Длина стержня (см)" lowerBound="0" upperBound="10" />
+                    </xAxis>
+                    <yAxis>
+                        <NumberAxis autoRanging="false" label="Температура (K)" lowerBound="0" side="LEFT" upperBound="800" />
+                    </yAxis>
+                </LineChart>
+                <Button layoutX="800.0" layoutY="750.0" onAction="#clearGraph" prefHeight="29.0" prefWidth="172.0" text="Очистить график">
+                    <font>
+                        <Font size="15.0" />
+                    </font></Button>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
