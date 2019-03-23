@@ -1,4 +1,4 @@
-function Main()
+function laba1()
     sample = importdata('data(var11).txt');
     sample = sort(sample);
     
@@ -27,10 +27,10 @@ function Main()
     end
     fprintf("\n\n\n"); 
 
-%    figure(1);
-%    grid;
-%    hold on;
-%    HistogramAndDensity(sample)
+    figure(1);
+    grid;
+    hold on;
+    HistogramAndDensity(sample)
 
     figure(2);
     grid;
@@ -87,7 +87,7 @@ function[GroupTable, m] = Group(sample)
 end
 
 
-
+%Гистограмма и график функции плотности
 function[] = HistogramAndDensity(sample)
     [min] = getMinValue(sample);
     [max] = getMaxValue(sample);
@@ -116,9 +116,9 @@ function[] = HistogramAndDensity(sample)
     x(n+1) = max;
     y(n+1) = y(n);
     
-    %РіРёСЃС‚РѕРіСЂР°РјРјР°
+    %гистограмма
     stairs(x, y), grid;
-    %РіСЂР°С„РёРє РїР»РѕС‚РЅРѕСЃС‚Рё
+    %график плотности
     plot(Graph(1,:), Graph(2,:), 'r'),grid;
     
 end
@@ -132,35 +132,34 @@ function[y] = NormalDistribution(x,mx,dx)
     y = 1/sqrt(2*pi*dx) * int( exp(-((t-mx).^2)/2/dx), t, -Inf, x);
 end
 
-
+%эмпирическая функция и функции распределения случайной величины 
 function EmpiricalAndDensity(sample)
     [min] = getMinValue(sample);
     [max] = getMaxValue(sample);
-    count = 100;
+    count = length(sample);
     Delta = (max-min)/(count-1);
 
     Graph = zeros(2,count);
     [MX] = getExpectedValue(sample);
     [DX] = getDispersionValue(sample);
     
-    %РіСЂР°С„РёРє С„СѓРЅРєС†РёРё СЂР°СЃРїСЂРµРґРµР»РµРЅРёСЏ
+   
     for i = 1:count
-        fprintf("%d\n", i);
         X = min + Delta*(i-1);
-        Graph(1,i) = X;
-        %Graph(2,i) = 1;
+        Graph(1,i) = X;        
         Graph(2,i) = NormalDistribution(X, MX, DX);
-        fprintf("%f %f \n", Graph(1,i), Graph(2,i));
+        %fprintf("%f %f \n", Graph(1,i), Graph(2,i));
     end
 
-    %РіСЂР°С„РёРє СЌРјРїРёСЂРёС‡РµСЃРєРѕР№ С„СѓРЅРєС†РёРё
-    F = zeros(count);
+    
+    F = zeros(count);    
     for i = 1:count
        F(i) = EmpiricFunc(sample(i), sample, count);
-       fprintf("EmpiricFunc %f %f \n", sample(i), F(i));
+       %fprintf("EmpiricFunc %f %f \n", sample(i), F(i));
     end
-    
+     %график эмпирической функции
     stairs(sample, F),grid;
+     %график функции распределения
     plot(Graph(1,:), Graph(2,:), 'r'),grid;
 end
 
