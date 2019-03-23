@@ -1,0 +1,45 @@
+def format_newline(arr):
+
+    k = 0
+    
+    for i in range(len(arr)):
+        arr[i] = arr[i].strip()
+
+        if arr[i] == '':
+            k += 1
+
+    for i in range(k):
+        arr.remove('')
+
+    return arr
+
+def analyze_equal(data):
+
+    dif1 = 0
+    dif2 = 0
+    match = 0
+
+    for x in data:
+        if x[0] == '-':
+            dif1 += 1
+        elif x[0] == '+':
+            dif2 += 1
+        elif x[0] != '?':
+            match += 1
+
+    return dif1, dif2, match
+
+def count_uniqueness(data, match):
+
+    data = format_newline(data)
+    n = len(data)
+    unique = match / n * 100
+    return unique
+
+def compare_files(file1, file2):
+
+    if open(file1).readlines() == []:
+        return -1
+
+    if open(file2).readlines() == []:
+        return -1
