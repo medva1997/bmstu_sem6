@@ -1,0 +1,146 @@
+(setf test `(a (1 2 (b 1 2 c))
+		  (1 2 3)
+		  (b (9 1 2 3))))
+
+(setf test2 `(5 (1 2 (8 (1 2 a)))
+		  (1 2 3)
+		  (10 (9 1 2 3))))		  
+
+(defun f (l)
+			(reduce #' lambda (x c) (union x c) l) 
+)
+			
+(defun isdigits (lst)
+	(cond		
+        ((and (isdigitlist  lst)  (listp lst))  lst)
+		
+		((and (listp lst) (listp  (car lst))) (cons (isdigits (car lst)) (isdigits (cdr lst))))
+		((listp lst) (isdigits (cdr lst)))
+		((null lst) T)
+		
+	)
+)
+(lst22 (lst21 (cdr (lst20  (isdigits test2)))))
+(defun lst20 (lst)
+	(mapcar #'(lambda (x) (lst_to_enum x () )) lst)
+)
+
+(defun f (lst1 lst2)
+    (remove-if (lambda (x) (member x lst2 :test #'equalp )) lst1)
+)
+
+(defun pre (a l)
+	(cond 
+		((null l) nil)
+		((eq a (car l)) t)
+		(t (pre a (cdr l)))
+	)
+)
+(defun inter (a b)
+	(cond
+		((null a) nil)
+		((null b) nil)
+		((pre (car a) b)(cons (car a) (inter (cdr a) b)))
+		(T (inter (cdr a) b))
+	)
+)
+
+(defun lst21 (lst)
+	(reduce #'inter lst)
+)
+
+(defun lstlen (lst n)
+	(cond
+		((null lst ) nil)
+		((= 0 n) nil)
+		(T (cons (car lst) (lstlen (cdr lst) (- n 1))))
+	)	
+)
+(defun lst23 (lst  n)
+	(cond ((= -1 n) (list nil))
+		  ((null lst ) nil)
+		  ((<= n (length lst)) (cons (lstlen lst n) (lst23 (cdr lst) n) ))
+		  (T nil)
+	)
+)
+(defun lst24 (lst n)
+	(cond 
+		  ((= n 0) nil)
+		  (T (cons (lst23 lst n) (lst24 lst (- n 1))))
+	)
+)
+
+(defun lst25 (lst)
+	(lst24 lst (length lst))
+)
+
+
+
+(defun lst22 (lst)
+	(cond ((null (cdr lst)) (list () (list (car lst))))
+		  (t (let ((a (car lst)) (b (lst22 (cdr lst))))
+		    (append () b (mapcar #'(lambda (x) (cons a x)) b ))))))
+
+
+# получить из многоуровнего списка все цифры
+(defun lst_to_enum (lst enum) 
+  (mapcan 
+      #'(lambda (x) 
+        (
+          cond 
+                ((numberp x)(cons x enum))
+                ((listp x) (lst_to_enum x enum)) 
+                (T            NIL) 
+        ) 
+      ) 
+      lst 
+  ) 
+)
+
+
+(defun isdigitlist (lst)
+	(cond
+        ((null lst) 				T)
+		((numberp lst)				T)		
+		((numberp (car lst))		(isdigitlist (cdr lst )))
+        ((listp   lst)				nil)
+		(T nil)		
+	)
+)
+( defun lst_to (lst enum)
+	(mapcan #'(lambda (x)
+		(cond 
+			((isdigitlist x) (cons x enum))
+			(T NIL)
+		)
+		)lst
+	)
+)
+
+(defun lst_to_enum (lst enum mini maxi) 
+  (mapcan 
+      #'(lambda (x) 
+        (
+          cond 
+                ((numberp x) 
+                  (cond
+                    ((and (<= mini  x) (<= x maxi)) (cons x enum))
+                    (T NIL)
+                  )
+                )
+                ((listp x) (lst_to_enum x enum mini maxi)) 
+                (T            NIL) 
+        ) 
+      ) 
+      lst 
+  ) 
+)
+
+
+
+(lst_to test2 ())
+(isdigits '(1 2 3))
+(defun get_num_list (lst)
+(remove-if-not #'numberp (into_one_level lst))
+)
+(digitlists test test ())
