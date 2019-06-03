@@ -63,7 +63,7 @@ end
 
 function[GroupTable, m] = Group(sample)
     n = length(sample);
-    m = floor(log2(n)) + 1;
+    m = floor(log2(n)) + 2;
     fprintf("m        : %d \n", m);
 
     GroupTable = zeros(2,m);
@@ -127,8 +127,8 @@ function[y] = NormalDensityDistribution(x, mx, dx)
     y = exp(-((x-mx).^2)/2/dx)/sqrt(2*pi*dx);
 end
 
-function[y] = NormalDistribution(x,mx,dx)
-    syms t;
+function[y] = NormalDistribution(x,mx,dx,t)
+    %syms t;
     y = 1/sqrt(2*pi*dx) * int( exp(-((t-mx).^2)/2/dx), t, -Inf, x);
 end
 
@@ -143,11 +143,11 @@ function EmpiricalAndDensity(sample)
     [MX] = getExpectedValue(sample);
     [DX] = getDispersionValue(sample);
     
-   
+    syms t;
     for i = 1:count
         X = min + Delta*(i-1);
         Graph(1,i) = X;        
-        Graph(2,i) = NormalDistribution(X, MX, DX);
+        Graph(2,i) = NormalDistribution(X, MX, DX,t);
         %fprintf("%f %f \n", Graph(1,i), Graph(2,i));
     end
 
