@@ -16,7 +16,7 @@ function main()
     
     %б)вычисление нижней и верхней границ µ(~xn),µ(~xn)для gamma-доверительного интервала
     %для математического ожидания MX;
-    gam = 0.9;
+    gam = 0.90;
     [lM, hM] = GetBordersForExpectedValue(gam, s2, mu, N);
     
     fprintf("MX borders with gamma=%.2f: (%.4f .. %.4f)\n", gam, lM, hM);
@@ -84,8 +84,8 @@ function GetGraphMX(sample, n, gam)
     s2 = zeros(n,1);
     lMu = zeros(n,1);
     hMu = zeros(n,1);
-    
-    for i = 1:n
+    startI = 10;
+    for i = startI:n
         part = sample(1:i);
         [mu(i)] = GetMuExpectedValue(part);
         [s2(i)] = GetS2DispersionValue(part);
@@ -95,10 +95,10 @@ function GetGraphMX(sample, n, gam)
     line = zeros(n,1);
     line(1:n) = mu(n);
     
-    plot(line, 'g');
-    plot(lMu, 'r');
-    plot(hMu, 'b');
-    plot(mu, 'k');
+    plot((startI:n),line(startI:n), 'g');
+    plot((startI:n),lMu(startI:n), 'r');
+    plot((startI:n),hMu(startI:n), 'b');
+    plot((startI:n),mu(startI:n), 'k');
     grid on;
     xlabel('n');
     ylabel('\mu');
@@ -110,12 +110,13 @@ function GetGraphDX(sample, n, gam)
     lSigma = zeros(n,1);
     hSigma = zeros(n,1);
     
-    startI = 3;
+    startI = 10;
     
     for i = startI:n
         part = sample(1:i);
         [s2(i)] = GetS2DispersionValue(part);
         [lSigma(i), hSigma(i)] = GetBordersForDispersionValue(gam, s2(i), i);
+        fprintf(" borders: (%.4f .. %.4f) R=%.4f\n",lSigma(i), hSigma(i),hSigma(i)- lSigma(i));
     end
 
     line = zeros(n,1);

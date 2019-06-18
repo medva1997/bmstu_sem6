@@ -1,7 +1,11 @@
 function laba1()
     sample = importdata('data(var11).txt');
     sample = sort(sample);
-    
+    global grmin;
+    global grmax;
+    grmin = -7;
+    grmax = 3;
+    global Min;
     [Max] = getMaxValue(sample);
     [Min] = getMinValue(sample);
     [Range] = getRange(sample);
@@ -92,29 +96,42 @@ function[] = HistogramAndDensity(sample)
     [min] = getMinValue(sample);
     [max] = getMaxValue(sample);
     count = length(sample);
+    
     Delta = (max-min)/(count-1);
 
-    Graph = zeros(2,count);
+    Graph = zeros(2,count+2);
     [MX] = getExpectedValue(sample);
     [DX] = getDispersionValue(sample);
-    
+    Graph(1,1) = -7;
+    Graph(2,1) = 0;
     for i = 1:count
         X = min + Delta*(i-1);
-        Graph(1,i) = X;
-        Graph(2,i) = NormalDensityDistribution(X, MX, DX);
+        Graph(1,i+1) = X;
+        Graph(2,i+1) = NormalDensityDistribution(X, MX, DX);
     end
+    Graph(1,count+2) = 3;
+    Graph(2,count+2) = 0;
    
     [GroupTable, n] = Group(sample);
-    x = zeros(n+1);
-    y = zeros(n+1);
-    znam = length(sample)*getRange(sample)/n;
+    x = zeros(n+4);
+    y = zeros(n+4);
+    global grmin;
+    global grmax;
+    x(1) = grmin;
+    y(1) = 0;
+   
+    %znam = length(sample)*getRange(sample)/n;
     for i =1:n
-        x(i) = GroupTable(1,i);
-        y(i) = GroupTable(2,i) ./ znam;
-        fprintf("%f %f \n", x(i), y(i));
+        x(i+1) = GroupTable(1,i);
+        y(i+1) = GroupTable(2,i) ./ length(sample);
+        fprintf("%f %f \n", x(i+1), y(i+1));
     end
-    x(n+1) = max;
-    y(n+1) = y(n);
+    x(n+2) = x(n+1)+(x(n+1)-x(n));
+    y(n+2) = y(n+1);
+    x(n+3) = x(n+2);
+    y(n+3) = 0;
+    y(n+4)= 0;
+    x(n+4)= grmax;
     
     %гистограмма
     stairs(x, y), grid;
@@ -127,38 +144,45 @@ function[y] = NormalDensityDistribution(x, mx, dx)
     y = exp(-((x-mx).^2)/2/dx)/sqrt(2*pi*dx);
 end
 
-function[y] = NormalDistribution(x,mx,dx,t)
+function[y] = NormalDistribution(x,mx,sdx)
     %syms t;
-    y = 1/sqrt(2*pi*dx) * int( exp(-((t-mx).^2)/2/dx), t, -Inf, x);
+    %global Min;
+    %y = 1/sqrt(2*pi*dx) * int( exp(-((t-mx).^2)/2/dx), t, Min-2 , x);
+    y = cdf('Normal', x, mx,sdx);
 end
 
 %эмпирическая функция и функции распределения случайной величины 
 function EmpiricalAndDensity(sample)
-    [min] = getMinValue(sample);
-    [max] = getMaxValue(sample);
+    global grmax;
+    global grmin;
+    [min] = grmin;
+    [max] = grmax;
     count = length(sample);
     Delta = (max-min)/(count-1);
 
     Graph = zeros(2,count);
     [MX] = getExpectedValue(sample);
     [DX] = getDispersionValue(sample);
+    SDX = sqrt(DX);
     
-    syms t;
+    %syms t;
     for i = 1:count
         X = min + Delta*(i-1);
         Graph(1,i) = X;        
-        Graph(2,i) = NormalDistribution(X, MX, DX,t);
+        Graph(2,i) = NormalDistribution(X, MX, SDX);
         %fprintf("%f %f \n", Graph(1,i), Graph(2,i));
     end
 
     
-    F = zeros(count);    
+    F = zeros(count+2);    
     for i = 1:count
-       F(i) = EmpiricFunc(sample(i), sample, count);
+       F(i+1) = EmpiricFunc(sample(i), sample, count);
        %fprintf("EmpiricFunc %f %f \n", sample(i), F(i));
     end
      %график эмпирической функции
-    stairs(sample, F),grid;
+    x=[grmin sample grmax];
+    F(count+2)=1;
+    stairs(x,F),grid;
      %график функции распределения
     plot(Graph(1,:), Graph(2,:), 'r'),grid;
 end
